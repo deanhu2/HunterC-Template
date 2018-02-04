@@ -4,8 +4,8 @@
 cmake_minimum_required(VERSION 3.0)
 
 ### Include HunterGate module from git submodule
-set(gate_dir "${CMAKE_CURRENT_LIST_DIR}")
-set(gate_module "${gate_dir}/Project/cmake/Hunter/HunterGate.cmake")
+set(gate_dir "${CMAKE_CURRENT_LIST_DIR}/")
+set(gate_module "${CMAKE_CURRENT_LIST_DIR}/HunterGate.cmake")
 
 get_filename_component(gate_module "${gate_module}" ABSOLUTE)
 if(NOT EXISTS "${gate_module}")

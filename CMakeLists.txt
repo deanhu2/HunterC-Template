@@ -1,4 +1,4 @@
 cmake_minimum_required(VERSION 3.0)
-include("../common/common.cmake")
+include(${CMAKE_CURRENT_LIST_DIR}/common/common.cmake)
 project(yourProject)
-include(${CMAKE_CURRENT_SOURCE_DIR}/src/CMakeLists.txt)
+include(${CMAKE_CURRENT_LIST_DIR}/src/CMakeLists.txt)
